@@ -1,0 +1,340 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+	<title>THD Web App - Widgets</title>
+	<meta name="description" content="">
+	<meta name="viewport" content="width=device-width" />
+	<link rel="stylesheet" href="css/bootstrap.min.css" />
+	<link rel="stylesheet" href="css/bootstrap-theme.min.css" />
+	<link rel="stylesheet" href="css/jquery-ui.css" />
+	<link rel="stylesheet" href="css/jquery-ui.min.css" />
+	<link rel="stylesheet" href="css/jquery-ui.structure.css" />
+	<link rel="stylesheet" href="css/font-awesome.min.css" />
+	<link rel="stylesheet" href="css/custom.css" />
+	<link rel="stylesheet" href="css/navbar-fixed-top.css" />
+	<script src="js/vendor/jquery-1.10.1.min.js"></script>
+	<script src="js/vendor/jquery-ui.structure.min.js"></script>
+	<script src="js/vendor/jquery-ui.js"></script>
+	<script src="js/vendor/jquery-ui.min.js"></script>
+	<script src="js/vendor/jquery.cookie.js"></script>
+	<script src="js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
+	<script src="js/vendor/bootstrap.min.js"></script>
+	<script src="js/vendor/jquery.validate.min.js"></script>
+	<script src="js/login.js"></script>
+	<script src="js/main.js"></script>
+	
+	<!-- Drag & Drop Portlets Start -->
+	<script>    
+	     $(function() {
+			$( ".column" ).sortable({
+				connectWith: ".column",
+				handle: ".portlet-header",
+				cancel: ".portlet-toggle",
+				placeholder: "portlet-placeholder ui-corner-all"
+			});
+			$( ".portlet" )
+				.addClass( "ui-widget ui-widget-content ui-helper-clearfix ui-corner-all" )
+				.find( ".portlet-header" )
+				.addClass( "ui-widget-header ui-corner-all" )
+				.prepend( "<span class='fa fa-minus portlet-toggle'></span>");
+				$( ".portlet-toggle" ).click(function() {
+				var icon = $( this );
+				icon.toggleClass( "fa-minus fa-plus" );
+				icon.closest( ".portlet" ).find( ".portlet-content" ).toggle();
+			});
+		});
+	</script>
+	<!-- Drag & Drop Portlets End -->
+	
+	<!-- Tabs Start -->
+	<script>    
+	     $(function() {
+		    $( "#tabs" ).tabs();
+		 });
+	</script>
+	<!-- Tabs End -->
+	
+	
+	<style >
+	
+	
+	
+		
+	</style>
+  </head>
+
+  <body>
+
+    <!-- Fixed navbar -->
+    <nav class="navbar navbar-default navbar-fixed-top navbar-inverse">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <div class="navbar-brand">
+	            <img src="images/com-hd-logo.png" height="50" width="50">
+	            <span class="brand">THD Web App</span>
+	        </div>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+            <li class=""><a href="index.html">Home</a></li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Menu <span class="caret"></span></a>
+              <ul class="dropdown-menu" role="menu">
+                <li><a href="typography.html">Typography</a></li>
+                <li><a href="colors.html">Colors</a></li>
+                <li><a href="grid.html">Grid</a></li>
+                <li><a href="forms.html">Forms</a></li>
+                <li><a href="tables.html">Tables</li>
+                <li><a href="buttons.html">Buttons</a></li>
+                <li><a href="lists.html">Lists</a></li>
+                <li><a href="navigation.html">Navigation</li>
+                <li><a href="widgets.html">Widgets</a></li>
+                <li><a href="tabs.html">Tabs</a></li>
+                <li><a href="labels.html">Labels &amp; Badges</a></li>
+                <li><a href="datepicker.html">Datepicker</a></li>
+              </ul>
+            </li>
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="#myModal" data-toggle="modal"><i class="fa fa-cog fa-2x"></i></a></li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>	      
+	    <section class="container-fluid">
+		    <div class="row text-center">
+		    	<div class="alert alert-info" style="margin:-1px; padding:5px;">				
+				        <a href="#" class="close" data-dismiss="alert">×</a>				
+				         Click a project from the list or Search 				
+				    </div>
+		    </div>
+		</section>
+    </nav>
+	
+    <div class="container">
+
+      <!-- Main component Start  -->
+      
+      <h1>Widgets</h1>
+			<hr>
+			<h2>Search</h2>
+				<div id="search">
+				<form class="" role="search">
+			        <div class="form-group input-group-lg search-input">
+			          <input type="text" class="form-control inputSearch" placeholder="Search">
+			        </div>
+				</form>
+				</div>
+			<br />
+			
+			<h2>Accordion</h2>
+			    <div id="accordion" class="panel-group">
+			        <div class="panel panel-default">			
+			            <div class="panel-heading">			
+			                <h4 class="panel-title">			
+			                    <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne">1. What is HTML?</a>			
+			                </h4>			
+			            </div>			
+			            <div id="collapseOne" class="panel-collapse in">			
+			                <div class="panel-body">
+			                    <p>HTML stands for HyperText Markup Language. HTML is the main markup language for describing the structure of Web pages. <a href="#" target="_blank">Learn more.</a></p>
+			                </div>
+			            </div>
+			        </div>
+			        <div class="panel panel-default">
+			            <div class="panel-heading">
+			                <h4 class="panel-title">
+			                    <a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">2. What is Twitter Bootstrap?</a>
+			                </h4>
+			            </div>
+			            <div id="collapseTwo" class="panel-collapse collapse">
+			                <div class="panel-body">
+			                    <p>Twitter Bootstrap is a powerful front-end framework for faster and easier web development. It is a collection of CSS and HTML conventions. <a href="#" target="_blank">Learn more.</a></p>
+			                </div>
+			            </div>
+			        </div>
+			        <div class="panel panel-default">
+			            <div class="panel-heading">
+			                <h4 class="panel-title">
+			                    <a data-toggle="collapse" data-parent="#accordion" href="#collapseThree">3. What is CSS?</a>
+			                </h4>
+			            </div>
+			            <div id="collapseThree" class="panel-collapse collapse">			
+			                <div class="panel-body">			
+			                    <p>CSS stands for Cascading Style Sheet. CSS allows you to specify various style properties for a given HTML element such as colors, backgrounds, fonts etc. <a href="#" target="_blank">Learn more.</a></p>			
+			                </div>			
+			            </div>			
+			        </div>			
+			    </div>
+			<br />
+
+				
+				<h2>Progress Bar</h2>
+					<div class="progress">
+				        <div class="progress-bar" style="width: 60%;">
+				            <span class="sr-only">60% Complete</span>
+				        </div>
+				    </div>
+					<br />
+				
+				<h2>Progress Bar w/ Labels</h2>
+				<div class="progress">
+			        <div class="progress-bar" style="width: 60%;">
+			            60%
+			        </div>
+			    </div>
+			    
+				<h2>Stripped Progress Bar</h2>
+					<div class="progress progress-striped">
+				        <div class="progress-bar" style="width: 60%;">
+				            <span class="sr-only">60% Complete</span>
+				        </div>
+				    </div>
+					<br />
+			
+				<h2>Animated Stripped Progress Bar</h2>
+					<div class="progress progress-striped active">
+				        <div class="progress-bar" style="width: 60%;">
+				            <span class="sr-only">60% Complete</span>
+				        </div>
+				    </div>
+					<br />
+
+				<h2>Stacked Progress Bar</h2>
+				    <div class="progress">
+				        <div class="progress-bar progress-bar-success" style="width: 35%">
+				            <span class="sr-only">35% Complete (success)</span>
+				        </div>
+				        <div class="progress-bar progress-bar-warning" style="width: 20%">
+				            <span class="sr-only">20% Complete (warning)</span>
+				        </div>
+				        <div class="progress-bar progress-bar-danger" style="width: 10%">
+				            <span class="sr-only">10% Complete (danger)</span>
+				        </div>
+				    </div>
+					<br />
+
+				<h2>Progress Bar with Emphasis Classes</h2>
+				    <div class="progress">
+				        <div class="progress-bar progress-bar-info" style="width: 20%">				
+				            <span class="sr-only">20% Complete</span>				
+				        </div>				
+				    </div>				
+				    <div class="progress">				
+				        <div class="progress-bar progress-bar-success" style="width: 40%">				
+				            <span class="sr-only">40% Complete</span>				
+				        </div>				
+				    </div>				
+				    <div class="progress">				
+				        <div class="progress-bar progress-bar-warning" style="width: 60%">				
+				            <span class="sr-only">60% Complete</span>				
+				        </div>				
+				    </div>				
+				    <div class="progress">				
+				        <div class="progress-bar progress-bar-danger" style="width: 80%">				
+				            <span class="sr-only">80% Complete</span>				
+				        </div>				
+				    </div>
+					<br />
+
+				<h2>Stripped Progress Bar with Emphasis Classes</h2>
+				    <div class="progress progress-striped">
+				        <div class="progress-bar progress-bar-info" style="width: 20%">				
+				            <span class="sr-only">20% Complete</span>				
+				        </div>				
+				    </div>				
+				    <div class="progress progress-striped">				
+				        <div class="progress-bar progress-bar-success" style="width: 40%">				
+				            <span class="sr-only">40% Complete</span>				
+				        </div>				
+				    </div>				
+				    <div class="progress progress-striped">				
+				        <div class="progress-bar progress-bar-warning" style="width: 60%">				
+				            <span class="sr-only">60% Complete</span>				
+				        </div>				
+				    </div>				
+				    <div class="progress progress-striped">				
+				        <div class="progress-bar progress-bar-danger" style="width: 80%">				
+				            <span class="sr-only">80% Complete</span>				
+				        </div>				
+				    </div>
+					<br />
+					
+				<h2>Contextual Backgrounds</h2>
+				    <p class="bg-primary">Important: Please read the instructions carefully before proceed.</p>				
+				    <p class="bg-success">Success: Your message has been sent successfully.</p>				
+				    <p class="bg-info">Note: You must agree with the terms and conditions to complete the sign up process.</p>
+				    <p class="bg-warning">Warning: There was a problem with your network connection.</p>				
+				    <p class="bg-danger">Error: An error has been occurred while submitting your data.</p>
+					<br />
+
+				<h2>Close Icon</h2>
+				    <div class="alert alert-warning">				
+				        <a href="#" class="close" data-dismiss="alert">&times;</a>				
+				        <strong>Warning!</strong> There was a problem with your network connection.				
+				    </div>
+					<br />
+
+				<h2>Drag and Drop Portlets</h2>
+					<div class="column">
+						<div class="portlet">
+							<div class="portlet-header">Feeds</div>
+							<div class="portlet-content">Lorem ipsum dolor sit amet, consectetuer adipiscing elit</div>
+						</div>
+						<div class="portlet">
+							<div class="portlet-header">News</div>
+							<div class="portlet-content">Lorem ipsum dolor sit amet, consectetuer adipiscing elit</div>
+						</div>
+					</div>
+					
+					<div class="column">
+						<div class="portlet">
+							<div class="portlet-header">Shopping</div>
+							<div class="portlet-content">Lorem ipsum dolor sit amet, consectetuer adipiscing elit</div>
+						</div>
+					</div>
+					<div class="column">
+						<div class="portlet">
+							<div class="portlet-header">Links</div>
+							<div class="portlet-content">Lorem ipsum dolor sit amet, consectetuer adipiscing elit</div>
+						</div>
+						<div class="portlet">
+							<div class="portlet-header">Images</div>
+							<div class="portlet-content">Lorem ipsum dolor sit amet, consectetuer adipiscing elit</div>
+						</div>
+					</div>
+					<div class="column">
+					</div>
+      
+	  <!-  Main component End -->
+    </div> <!-- /container -->
+
+
+     <!-- Modal HTML -->
+    <div id="myModal" class="modal fade">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true"><i class="fa fa-close"></i></button>
+                    <h4 class="modal-title">Settings</h4>
+                </div>
+                <div class="modal-body">
+                    <p>Do you want to save changes you made to document before closing?</p>
+                    <p class="text-warning"><small>If you don't save, your changes will be lost.</small></p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save changes</button>
+                </div>
+            </div>
+        </div>
+    </div>     
+
+</body></html>

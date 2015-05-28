@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+	<title>THD Web App - Buttons</title>
+	<meta name="description" content="">
+	<meta name="viewport" content="width=device-width" />
+	<link rel="stylesheet" href="css/bootstrap.min.css" />
+	<link rel="stylesheet" href="css/bootstrap-theme.min.css" />
+	<link rel="stylesheet" href="css/jquery-ui.css" />
+	<link rel="stylesheet" href="css/jquery-ui.min.css" />
+	<link rel="stylesheet" href="css/jquery-ui.structure.css" />
+	<link rel="stylesheet" href="css/font-awesome.min.css" />
+	<link rel="stylesheet" href="css/custom.css" />
+	<link rel="stylesheet" href="css/navbar-fixed-top.css" />
+	<script src="js/vendor/jquery-1.10.1.min.js"></script>
+	<script src="js/vendor/jquery-ui.structure.min.js"></script>
+	<script src="js/vendor/jquery-ui.js"></script>
+	<script src="js/vendor/jquery-ui.min.js"></script>
+	<script src="js/vendor/jquery.cookie.js"></script>
+	<script src="js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
+	<script src="js/vendor/bootstrap.min.js"></script>
+	<script src="js/vendor/jquery.validate.min.js"></script>
+	<script src="js/login.js"></script>
+	<script src="js/main.js"></script>
+	
+	<script>
+		$(function() {
+		    $( "#datepicker" ).datepicker();
+		    $( "#anim" ).change(function() {
+		      $( "#datepicker" ).datepicker( "option", "showAnim", $( this ).val() );
+		    });
+		  });
+	</script>
+	<style >
+		
+		
+	</style>
+  </head>
+
+  <body>
+
+    <!-- Fixed navbar -->
+    <nav class="navbar navbar-default navbar-fixed-top navbar-inverse">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <div class="navbar-brand">
+	            <img src="images/com-hd-logo.png" height="50" width="50">
+	            <span class="brand">THD Web App</span>
+	        </div>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+            <li class=""><a href="index.html">Home</a></li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Menu <span class="caret"></span></a>
+              <ul class="dropdown-menu" role="menu">
+                <li><a href="typography.html">Typography</a></li>
+                <li><a href="colors.html">Colors</a></li>
+                <li><a href="grid.html">Grid</a></li>
+                <li><a href="forms.html">Forms</a></li>
+                <li><a href="tables.html">Tables</li>
+                <li><a href="buttons.html">Buttons</a></li>
+                <li><a href="lists.html">Lists</a></li>
+                <li><a href="navigation.html">Navigation</li>
+                <li><a href="widgets.html">Widgets</a></li>
+                <li><a href="tabs.html">Tabs</a></li>
+                <li><a href="labels.html">Labels &amp; Badges</a></li>
+                <li><a href="datepicker.html">Datepicker</a></li>
+              </ul>
+            </li>
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="#myModal" data-toggle="modal"><i class="fa fa-cog fa-2x"></i></a></li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>	      
+	    <section class="container-fluid">
+		    <div class="row text-center">
+		    	<div class="alert alert-info" style="margin:-1px; padding:5px;">				
+				        <a href="#" class="close" data-dismiss="alert">×</a>				
+				         Click a project from the list or Search 				
+				    </div>
+		    </div>
+		</section>
+    </nav>
+	
+    <div class="container">
+
+      <!-- Main component Start  -->
+      
+      <h1>Buttons</h1>
+			<hr>
+			
+			<h2>Call to Action Buttons</h2>
+			<p>Buttons are the integral part of an HTML form whether it is a login or a simple request form. Buttons are used for various purposes like submit or reset a form, indicating an important action or to fire an event to do something on a web page.</p>
+			<p>Different styles for buttons are available in the THD Web App to indicate different states of a button. Button styles can be applied to any element. However, it is applied normally to the <code>&lt;a&gt;</code>, <code>&lt;input&gt;</code>, and <code>&lt;button&gt;</code> elements for the best rendering.</p>
+                <p>The following table lists the different buttons which are available in the THD Web App:</p>
+			<table class="table table-striped table-bordered">
+                <thead>
+                    <tr>
+                        <th>Button</th>
+                        <th>Class</th>
+                        <th>Description</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><button class="btn btn-default" type="">Default Button</button></td>
+                        <td><code>btn&nbsp;btn-default</code></td>
+                        <td>Default gray button with gradient.</td>
+                    </tr>
+                    <tr>
+                        <td><button class="btn btn-primary" type="">Primary Button</button></td>
+                        <td><code>btn&nbsp;btn-primary</code></td>
+                        <td>Provides extra visual weight to indicate primary action button in a set of buttons.</td>
+                    </tr>
+                    <tr>
+                        <td><button class="btn btn-info" type="">Info Button</button></td>
+                        <td><code>btn&nbsp;btn-info</code></td>
+                        <td>Can be used as an alternative to the default button.</td>
+                    </tr>
+                    <tr>
+                        <td><button class="btn btn-success" type="">Success Button</button></td>
+                        <td><code>btn&nbsp;btn-success</code></td>
+                        <td>Indicates a successful or positive action.</td>
+                    </tr>
+                    <tr>
+                        <td><button class="btn btn-warning" type="">Warning Button</button></td>
+                        <td><code>btn&nbsp;btn-warning</code></td>
+                        <td>Indicates caution should be taken with this action.</td>
+                    </tr>
+                    <tr>
+                        <td><button class="btn btn-danger" type="">Danger Button</button></td>
+                        <td><code>btn&nbsp;btn-danger</code></td>
+                        <td>Indicates a dangerous or potentially negative action.</td>
+                    </tr>
+                    <tr>
+                        <td><button class="btn btn-link" type="">Link Button</button></td>
+                        <td><code>btn&nbsp;btn-link</code></td>
+                        <td>Deemphasize a button by making it look like a link while maintaining button behavior.</td>
+                    </tr>
+                </tbody>
+            </table>
+            <br/>
+            <br/>
+            
+            <h2>Call to Action Button, Input & Link</h2>
+            <table class="table table-bordered">
+            	<colgroup>
+            		<col style="background:#f0f0f0; font-weight:bold;">
+            	</colgroup>
+            	<tbody>
+            		<tr>
+            			<td>Button: <code>&lt;button&gt;</code></td>
+            			<td><button type="button" class="btn btn-default">Default</button></td>
+            			<td><button type="button" class="btn btn-primary">Primary</button></td>
+            			<td><button type="button" class="btn btn-info">Info</button></td>
+            			<td><button type="button" class="btn btn-success">Success</button></td>
+            			<td><button type="button" class="btn btn-warning">Warning</button></td>
+            			<td><button type="button" class="btn btn-danger">Danger</button></td>
+            			<td><button type="button" class="btn btn-link">Link</button></td>
+            		</tr>
+            		<tr>
+            			<td>Input: <code>&lt;input&gt;</code></td>
+            			<td><input type="button" class="btn btn-default" value="Default"></td>
+            			<td><input type="button" class="btn btn-primary" value="Primary"></td>
+            			<td><input type="button" class="btn btn-info" value="Info"></td>
+            			<td><input type="button" class="btn btn-success" value="Success"></td>
+            			<td><input type="button" class="btn btn-warning" value="Warning"></td>
+            			<td><input type="button" class="btn btn-danger" value="Danger"></td>
+            			<td><input type="button" class="btn btn-link" value="Link"></td>
+            		</tr>
+            		<tr>
+            			<td>Link: <code>&lt;a&gt;</code></td>
+            			<td><a href="#" class="btn btn-default">Default</a></td>
+            			<td><a href="#" class="btn btn-primary">Primary</a></td>
+            			<td><a href="#" class="btn btn-info">Info</a></td>
+            			<td><a href="#" class="btn btn-success">Success</a></td>
+            			<td><a href="#" class="btn btn-warning">Warning</a></td>
+            			<td><a href="#" class="btn btn-danger">Danger</a></td>
+            			<td><a href="#" class="btn btn-link">Link</a></td>
+            		</tr>
+            	</tbody>
+            </table>
+            <br/>
+			<br/>
+			
+			<h2>Button Sizes</h2>
+			<p>Bootstrap gives you option further to scaling a button up or down. You can a make buttons larger or smaller through adding an extra class <code>&lt;.btn-lg&gt;</code>, <code>&lt;.btn-sm&gt;</code>, or <code>&lt;.btn-xs&gt;</code></p>
+            <table class="table table-bordered">
+            	<colgroup>
+            		<col style="background:#f0f0f0; font-weight:bold;">
+            	</colgroup>
+            	<tbody>
+            		<tr>
+            			<td>Large: <code>btn-lg</code></td>
+            			<td><button type="button" class="btn btn-default btn-lg">Default</button></td>
+            			<td><button type="button" class="btn btn-primary btn-lg">Primary</button></td>
+            			<td><button type="button" class="btn btn-info btn-lg">Info</button></td>
+            			<td><button type="button" class="btn btn-success btn-lg">Success</button></td>
+            			<td><button type="button" class="btn btn-warning btn-lg">Warning</button></td>
+            			<td><button type="button" class="btn btn-danger btn-lg">Danger</button></td>
+            			<td><button type="button" class="btn btn-link btn-lg">Link</button></td>
+            		</tr>
+            		<tr>
+            			<td>Medium: <code></code></td>
+            			<td><button type="button" class="btn btn-default">Default</button></td>
+            			<td><button type="button" class="btn btn-primary">Primary</button></td>
+            			<td><button type="button" class="btn btn-info">Info</button></td>
+            			<td><button type="button" class="btn btn-success">Success</button></td>
+            			<td><button type="button" class="btn btn-warning">Warning</button></td>
+            			<td><button type="button" class="btn btn-danger">Danger</button></td>
+            			<td><button type="button" class="btn btn-link">Link</button></td>
+            		</tr>
+            		<tr>
+            			<td>Small: <code>btn-sm</code></td>
+            			<td><button type="button" class="btn btn-default btn-sm">Default</button></td>
+            			<td><button type="button" class="btn btn-primary btn-sm">Primary</button></td>
+            			<td><button type="button" class="btn btn-info btn-sm">Info</button></td>
+            			<td><button type="button" class="btn btn-success btn-sm">Success</button></td>
+            			<td><button type="button" class="btn btn-warning btn-sm">Warning</button></td>
+            			<td><button type="button" class="btn btn-danger btn-sm">Danger</button></td>
+            			<td><button type="button" class="btn btn-link btn-sm">Link</button></td>
+            		</tr>
+            		<tr>
+            			<td>Extra Small: <code>btn-xs</code></td>
+            			<td><button type="button" class="btn btn-default btn-xs">Default</button></td>
+            			<td><button type="button" class="btn btn-primary btn-xs">Primary</button></td>
+            			<td><button type="button" class="btn btn-info btn-xs">Info</button></td>
+            			<td><button type="button" class="btn btn-success btn-xs">Success</button></td>
+            			<td><button type="button" class="btn btn-warning btn-xs">Warning</button></td>
+            			<td><button type="button" class="btn btn-danger btn-xs">Danger</button></td>
+            			<td><button type="button" class="btn btn-link btn-xs">Link</button></td>
+            		</tr>
+            	</tbody>
+            </table>
+            <br/>
+			<br/>
+			
+			<h2>Toggle Button</h2>
+			<p>You can activate toggling (i.e. change the normal state of a button to a push state and vice versa) on a single button by simply adding the data attribute <code>&lt;data-toggle="button"&gt;</code>.</p>
+			<table class="table table-bordered">
+            	<colgroup>
+            		<col style="background:#f0f0f0; font-weight:bold;">
+            	</colgroup>
+            	<tbody>
+            		<tr>
+            			<td>Toggle: <code>data-toggle="button"</code></td>
+            			<td><button type="button" class="btn btn-default btn-lg" data-toggle="button">Default</button></td>
+            			<td><button type="button" class="btn btn-primary btn-lg" data-toggle="button">Primary</button></td>
+            			<td><button type="button" class="btn btn-info btn-lg" data-toggle="button">Info</button></td>
+            			<td><button type="button" class="btn btn-success btn-lg" data-toggle="button">Success</button></td>
+            			<td><button type="button" class="btn btn-warning btn-lg" data-toggle="button">Warning</button></td>
+            			<td><button type="button" class="btn btn-danger btn-lg" data-toggle="button">Danger</button></td>
+            			<td><button type="button" class="btn btn-link btn-lg" data-toggle="button">Link</button></td>
+            		</tr>
+            	</tbody>
+            </table>
+            <br/>
+			<br/>		
+			
+			<h2>Block Level Button</h2>
+			<p>You can also create block level buttons (buttons that covers the full width of the parent elements) by adding an extra class <code>&lt;.btn-block&gt;</code>.</p>
+				<button type="button" class="btn btn-primary btn-lg btn-block">Block level button</button>
+	<button type="button" class="btn btn-default btn-lg btn-block">Block level button</button>
+            <br/>
+			<br/>		
+			
+			
+			<h2>Primary Call to Action Buttons w/ Icons</h2>
+				<ul>
+					<li><button class="btn btn-orange btn-sml" type="" disabled ><i class="fa fa-cog"></i> Small Button</button></li>
+					<li><button class="btn btn-orange btn-med" type=""><i class="fa fa-cog"></i> Regular Button</button></li>
+					<li><button class="btn btn-orange btn-lrg" type=""><i class="fa fa-cog"></i> Large Button</button></li>
+				</ul>
+                    <br/>
+					<br/>	
+										
+			<h2>Radio</h2>
+				<div id="radio">
+					<ul>
+					    <li><input name="radioChoice" value="1" id="r1" type="radio"><label for="r1">Choice 1</label></li>
+						<li><input name="radioChoice" value="2" id="r2" type="radio"><label for="r2">Choice 2</label></li>
+			    		<li><input name="radioChoice" value="3" id="r3" type="radio"><label for="r3">Choice 3</label></li>
+			    		<li><input name="radioChoice" value="4" id="r4" type="radio"><label for="r4">Choice 4</label></li>
+					</ul>
+				</div>
+                    <br/>
+					<br/>	
+			
+			<h2>Checkbox</h2>
+			<div id="checkbox">
+				<ul>
+				    <li><input name="checkChoice" value="1" id="c1" type="checkbox"><label for="c1">Choice 1</label></li>
+					<li><input name="checkChoice" value="2" id="c2" type="checkbox"><label for="c2">Choice 2</label></li>
+		    		<li><input name="checkChoice" value="3" id="c3" type="checkbox"><label for="c3">Choice 3</label></li>
+		    		<li><input name="checkChoice" value="4" id="c4" type="checkbox"><label for="c4">Choice 4</label></li>
+				</ul>
+			</div>
+                    <br/>
+					<br/>	
+				
+			<h2>Toggle Checkbox Buttons</h2>
+			<p>You can add the attribute <code>&lt;data-toggle="buttons"&gt;</code> to a group of checkboxes for checkbox style toggling on button group</p>
+			<div class="btn-group" data-toggle="buttons">
+				 <label class="btn btn-primary active">
+				    <input type="checkbox" autocomplete="off" checked> Checkbox 1
+				  </label>
+				  <label class="btn btn-primary">
+				    <input type="checkbox" autocomplete="off"> Checkbox 2
+				  </label>
+				  <label class="btn btn-primary">
+				    <input type="checkbox" autocomplete="off"> Checkbox 3
+				  </label>
+			</div>
+                    <br/>
+					<br/>	
+			
+			<h2>Toggle Radio Buttons</h2>
+			<p>You can add the attribute <code>&lt;data-toggle="buttons"&gt;</code> to a group of radio inputs for radio style toggling on button groups</p>
+			<div class="btn-group" data-toggle="buttons">
+				 <label class="btn btn-primary active">
+				    <input type="radio" name="options" id="option1" autocomplete="off" checked> Radio 1
+				  </label>
+				  <label class="btn btn-primary">
+				    <input type="radio" name="options" id="option2" autocomplete="off"> Radio 2
+				  </label>
+				  <label class="btn btn-primary">
+				    <input type="radio" name="options" id="option3" autocomplete="off"> Radio 3
+				  </label>
+			</div>
+                    <br/>
+					<br/>	
+			
+			<h2>Button Toolbar</h2>
+			<p>You can also combine sets of button groups together for creating more complex components like button toolbar. To create button toolbar just wrap sets of button groups in a <div> element and apply the class <code>&lt;.btn-toolbar&gt;</code> on it.</p>
+			<div class="btn-toolbar">
+		        <div class="btn-group">
+		            <button type="button" class="btn btn-primary">1</button>
+		            <button type="button" class="btn btn-primary">2</button>
+		            <button type="button" class="btn btn-primary">3</button>
+		            <button type="button" class="btn btn-primary">4</button>
+		        </div>
+		        <div class="btn-group">
+		            <button type="button" class="btn btn-primary">5</button>
+		            <button type="button" class="btn btn-primary">6</button>
+		            <button type="button" class="btn btn-primary">7</button>
+		        </div>
+		        <div class="btn-group">
+		            <button type="button" class="btn btn-primary">8</button>
+		        </div>
+		    </div>
+	  <!-  Main component End -->
+	  
+	  
+    </div> <!-- /container -->
+
+
+    <!-- Modal HTML -->
+    <div id="myModal" class="modal fade">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true"><i class="fa fa-close"></i></button>
+                    <h4 class="modal-title">Settings</h4>
+                </div>
+                <div class="modal-body">
+                    <p>Do you want to save changes you made to document before closing?</p>
+                    <p class="text-warning"><small>If you don't save, your changes will be lost.</small></p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save changes</button>
+                </div>
+            </div>
+        </div>
+    </div>    
+  
+
+</body></html>

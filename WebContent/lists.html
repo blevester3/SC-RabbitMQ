@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+	<title>THD Web App - Lists</title>
+	<meta name="description" content="">
+	<meta name="viewport" content="width=device-width" />
+	<link rel="stylesheet" href="css/bootstrap.min.css" />
+	<link rel="stylesheet" href="css/bootstrap-theme.min.css" />
+	<link rel="stylesheet" href="css/jquery-ui.css" />
+	<link rel="stylesheet" href="css/jquery-ui.min.css" />
+	<link rel="stylesheet" href="css/jquery-ui.structure.css" />
+	<link rel="stylesheet" href="css/font-awesome.min.css" />
+	<link rel="stylesheet" href="css/custom.css" />
+	<link rel="stylesheet" href="css/navbar-fixed-top.css" />
+	<script src="js/vendor/jquery-1.10.1.min.js"></script>
+	<script src="js/vendor/jquery-ui.structure.min.js"></script>
+	<script src="js/vendor/jquery-ui.js"></script>
+	<script src="js/vendor/jquery-ui.min.js"></script>
+	<script src="js/vendor/jquery.cookie.js"></script>
+	<script src="js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
+	<script src="js/vendor/bootstrap.min.js"></script>
+	<script src="js/vendor/jquery.validate.min.js"></script>
+	<script src="js/login.js"></script>
+	<script src="js/main.js"></script>
+	
+	
+  </head>
+
+  <body>
+
+    <!-- Fixed navbar -->
+    <nav class="navbar navbar-default navbar-fixed-top navbar-inverse">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <div class="navbar-brand">
+	            <img src="images/com-hd-logo.png" height="50" width="50">
+	            <span class="brand">THD Web App</span>
+	        </div>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+            <li class=""><a href="index.html">Home</a></li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Menu <span class="caret"></span></a>
+              <ul class="dropdown-menu" role="menu">
+                <li><a href="typography.html">Typography</a></li>
+                <li><a href="colors.html">Colors</a></li>
+                <li><a href="grid.html">Grid</a></li>
+                <li><a href="forms.html">Forms</a></li>
+                <li><a href="tables.html">Tables</li>
+                <li><a href="buttons.html">Buttons</a></li>
+                <li><a href="lists.html">Lists</a></li>
+                <li><a href="navigation.html">Navigation</li>
+                <li><a href="widgets.html">Widgets</a></li>
+                <li><a href="tabs.html">Tabs</a></li>
+                <li><a href="labels.html">Labels &amp; Badges</a></li>
+                <li><a href="datepicker.html">Datepicker</a></li>
+              </ul>
+            </li>
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="#myModal" data-toggle="modal"><i class="fa fa-cog fa-2x"></i></a></li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>	      
+	    <section class="container-fluid">
+		    <div class="row text-center">
+		    	<div class="alert alert-info" style="margin:-1px; padding:5px;">				
+				        <a href="#" class="close" data-dismiss="alert">×</a>				
+				         Click a project from the list or Search 				
+				    </div>
+		    </div>
+		</section>
+    </nav>
+	
+    <div class="container">
+
+      <!-- Main component for a primary marketing message or call to action -->
+      
+      <h1>Lists</h1>
+			<hr>
+			<h2>Unstyled Unordered Lists</h2>
+		    <ul class="list-unstyled">
+		      <li>Home</li>
+		      <li>Products
+		        <ul>
+		          <li>Gadgets</li>
+		          <li>Accessories</li>
+		        </ul>
+		      </li>
+		      <li>About Us</li>
+		      <li>Contact</li>
+		    </ul>
+			<br />
+			
+			<h2>Unstyled Ordered Lists</h2>
+		    <ol class="list-unstyled">
+		      <li>Home</li>
+		      <li>Products
+		        <ol>
+		          <li>Gadgets</li>
+		          <li>Accessories</li>
+		        </ol>
+		      </li>
+		      <li>About Us</li>
+		      <li>Contact</li>
+		    </ol>    
+			<br />
+			
+			<h2>Inline Unordered List</h2>
+		    <ul class="list-inline">
+		        <li>Home</li>
+		        <li>About Us</li>
+		        <li>Products</li>
+		        <li>Services</li>
+		        <li>Contact</li>
+		    </ul>
+		    <br />				
+
+			<h2>Definition Lists</h2>
+				<dl class="dl-horizontal">
+			        <dt>User Agent</dt>
+			        <dd>An HTML user agent is any device that interprets HTML documents.</dd>
+			        <dt>Client-side Scripting</dt>
+			        <dd>Client-side scripting generally refers to the category of computer programs on the web that are executed client-side i.e. by the user's web browser.</dd>
+			        <dt>Document Tree</dt>
+			        <dd>The tree of elements encoded in the source document.</dd>
+			    </dl>
+
+			<br />
+			<h2>List Groups</h2>
+				<h3>Example 1</h3>
+			    <ul class="list-group">
+			        <li class="list-group-item">Pictures</li>
+			        <li class="list-group-item">Documents</li>        
+			        <li class="list-group-item">Music</li>
+			        <li class="list-group-item">Videos</li>
+			    </ul>
+
+				<h3>Example 2</h3>
+			    <div class="list-group">
+			        <a href="#" class="list-group-item active">
+			            <span class="fa fa-camera"></span> Pictures <span class="badge">25</span>
+			        </a>
+			        <a href="#" class="list-group-item">
+			            <span class="fa fa-file"></span> Documents <span class="badge">145</span>
+			        </a>
+			        <a href="#" class="list-group-item">
+			            <span class="fa fa-music"></span> Music <span class="badge">50</span>
+			        </a>
+			        <a href="#" class="list-group-item">
+			            <span class="fa fa-film"></span> Videos <span class="badge">8</span>
+			        </a>
+			    </div>
+
+				<h3>Example 3</h3>
+			    <div class="list-group">
+			        <a href="#" class="list-group-item">
+			            <h4 class="list-group-item-heading">What is HTML?</h4>
+			            <p class="list-group-item-text">HTML stands for HyperText Markup Language. HTML is the main markup language for describing the structure of Web pages.</p>
+			        </a>
+			        <a href="#" class="list-group-item active">
+			            <h4 class="list-group-item-heading">What is THD Web App</h4>
+			            <p class="list-group-item-text">THD Web App is a powerful front-end framework for faster and easier web development. It is a collection of HTML and CSS based design template.</p>
+			        </a>
+			        <a href="#" class="list-group-item">
+			            <h4 class="list-group-item-heading">What is CSS?</h4>
+			            <p class="list-group-item-text">CSS stands for Cascading Style Sheet. CSS allows you to specify various style properties for a given HTML element such as colors, backgrounds, fonts etc.</p>
+			        </a>
+			    </div>
+			    <br/>
+			    
+			    <h2>List Groups w/ Contextual States</h2>
+				<ul class="list-group">
+			        <li class="list-group-item list-group-item-success">200 OK: The server successfully processed the request.</li>
+			        <li class="list-group-item list-group-item-info">100 Continue: The client should continue with its request.</li>
+			        <li class="list-group-item list-group-item-warning">503 Service Unavailable: The server is temporarily unable to handle the request.</li>
+			        <li class="list-group-item list-group-item-danger">400 Bad Request: The request cannot be fulfilled due to bad syntax.</li>
+			    </ul>
+			    
+			    
+    </div> <!-- /container -->
+
+
+    <!-- Modal HTML -->
+    <div id="myModal" class="modal fade">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true"><i class="fa fa-close"></i></button>
+                    <h4 class="modal-title">Settings</h4>
+                </div>
+                <div class="modal-body">
+                    <p>Do you want to save changes you made to document before closing?</p>
+                    <p class="text-warning"><small>If you don't save, your changes will be lost.</small></p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save changes</button>
+                </div>
+            </div>
+        </div>
+    </div>    
+  
+
+</body></html>

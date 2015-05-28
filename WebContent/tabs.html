@@ -1,0 +1,275 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+	<title>THD Web App - Tabs</title>
+	<meta name="description" content="">
+	<meta name="viewport" content="width=device-width" />
+	<link rel="stylesheet" href="css/bootstrap.min.css" />
+	<link rel="stylesheet" href="css/bootstrap-theme.min.css" />
+	<link rel="stylesheet" href="css/jquery-ui.css" />
+	<link rel="stylesheet" href="css/jquery-ui.min.css" />
+	<link rel="stylesheet" href="css/jquery-ui.structure.css" />
+	<link rel="stylesheet" href="css/font-awesome.min.css" />
+	<link rel="stylesheet" href="css/custom.css" />
+	<link rel="stylesheet" href="css/navbar-fixed-top.css" />
+	<script src="js/vendor/jquery-1.10.1.min.js"></script>
+	<script src="js/vendor/jquery-ui.structure.min.js"></script>
+	<script src="js/vendor/jquery-ui.js"></script>
+	<script src="js/vendor/jquery-ui.min.js"></script>
+	<script src="js/vendor/jquery.cookie.js"></script>
+	<script src="js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
+	<script src="js/vendor/bootstrap.min.js"></script>
+	<script src="js/vendor/jquery.validate.min.js"></script>
+	<script src="js/login.js"></script>
+	<script src="js/main.js"></script>
+	
+	<!-- Drag & Drop Portlets Start -->
+	<script>    
+	     $(function() {
+			$( ".column" ).sortable({
+				connectWith: ".column",
+				handle: ".portlet-header",
+				cancel: ".portlet-toggle",
+				placeholder: "portlet-placeholder ui-corner-all"
+			});
+			$( ".portlet" )
+				.addClass( "ui-widget ui-widget-content ui-helper-clearfix ui-corner-all" )
+				.find( ".portlet-header" )
+				.addClass( "ui-widget-header ui-corner-all" )
+				.prepend( "<span class='fa fa-minus portlet-toggle'></span>");
+				$( ".portlet-toggle" ).click(function() {
+				var icon = $( this );
+				icon.toggleClass( "fa-minus fa-plus" );
+				icon.closest( ".portlet" ).find( ".portlet-content" ).toggle();
+			});
+		});
+	</script>
+	<!-- Drag & Drop Portlets End -->
+	
+	<!-- Tabs Start -->
+	<script>    
+	     $(function() {
+		    $( "#tabs" ).tabs();
+		 });
+	</script>
+	<!-- Tabs End -->
+	
+	
+	<style >
+	
+	
+	
+		
+	</style>
+  </head>
+
+  <body>
+
+    <!-- Fixed navbar -->
+    <nav class="navbar navbar-default navbar-fixed-top navbar-inverse">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <div class="navbar-brand">
+	            <img src="images/com-hd-logo.png" height="50" width="50">
+	            <span class="brand">THD Web App</span>
+	        </div>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+            <li class=""><a href="index.html">Home</a></li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Menu <span class="caret"></span></a>
+              <ul class="dropdown-menu" role="menu">
+                <li><a href="typography.html">Typography</a></li>
+                <li><a href="colors.html">Colors</a></li>
+                <li><a href="grid.html">Grid</a></li>
+                <li><a href="forms.html">Forms</a></li>
+                <li><a href="tables.html">Tables</li>
+                <li><a href="buttons.html">Buttons</a></li>
+                <li><a href="lists.html">Lists</a></li>
+                <li><a href="navigation.html">Navigation</li>
+                <li><a href="widgets.html">Widgets</a></li>
+                <li><a href="tabs.html">Tabs</a></li>
+                <li><a href="labels.html">Labels &amp; Badges</a></li>
+                <li><a href="datepicker.html">Datepicker</a></li>
+              </ul>
+            </li>
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="#myModal" data-toggle="modal"><i class="fa fa-cog fa-2x"></i></a></li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>	      
+	    <section class="container-fluid">
+		    <div class="row text-center">
+		    	<div class="alert alert-info" style="margin:-1px; padding:5px;">				
+				        <a href="#" class="close" data-dismiss="alert">×</a>				
+				         Click a project from the list or Search 				
+				    </div>
+		    </div>
+		</section>
+    </nav>
+	
+    <div class="container">
+
+      <!-- Main component Start  -->
+      
+      <h1>Tabs</h1>
+			<hr>
+			<h2>JQ UI Tabs</h2>
+			<div id="tabs">
+			  <div id="tabMenu" class="tar">
+				  <ul class="tabMenu">
+				    <li><span><a id="showList" data-toggle="modal" data-target="#listUsers" style="background:#E2E2E2;">Application Name <i class="fa  fa-external-link"></i></a></span></li>
+	          		<li><a href="#tabs-1"><span>AD</span><span class="tabStatus tsGood"></span></a></li>
+				    <li><a href="#tabs-2"><span>QA</span><span class="tabStatus tsWarn"></span></a></li>
+				    <li><a href="#tabs-3"><span>QP</span><span class="tabStatus tsBad"></span></a></li>
+				  </ul>
+			  </div>
+			  <div id="tabContent">
+				  <div id="tabs-1">
+				    Tab 1 content goes here
+				  </div>
+				  <div id="tabs-2">
+				    Tab 2 content goes here
+				  </div>
+				  <div id="tabs-3">
+				    Tab 3 content goes here
+				  </div>
+			  </div>
+			</div>
+			<br />
+			<br />
+			
+			<h2>Tabs</h2>
+			<ul class="nav nav-tabs">
+		        <li class="active"><a data-toggle="tab" href="#sectionA">Home</a></li>
+		        <li><a data-toggle="tab" href="#sectionB">Profile</a></li>
+		        <li><a data-toggle="tab" href="#sectionC">Messages</a></li>
+		    </ul>
+		    <div class="tab-content">
+		        <div id="sectionA" class="tab-pane fade in active">
+		            <h3>Section A</h3>
+		            <p>Aliquip placeat salvia cillum iphone. Seitan aliquip quis cardigan american apparel, butcher voluptate nisi qui. Raw denim you probably haven't heard of them jean shorts Austin. Nesciunt tofu stumptown aliqua, retro synth master cleanse. Mustache cliche tempor, williamsburg carles vegan helvetica. Reprehenderit butcher retro keffiyeh dreamcatcher synth.</p>
+		        </div>
+		        <div id="sectionB" class="tab-pane fade">
+		            <h3>Section B</h3>
+		            <p>Vestibulum nec erat eu nulla rhoncus fringilla ut non neque. Vivamus nibh urna, ornare id gravida ut, mollis a magna. Aliquam porttitor condimentum nisi, eu viverra ipsum porta ut. Nam hendrerit bibendum turpis, sed molestie mi fermentum id. Aenean volutpat velit sem. Sed consequat ante in rutrum convallis. Nunc facilisis leo at faucibus adipiscing.</p>
+		        </div>
+		        <div id="sectionC" class="tab-pane fade">
+		            <h3>Section C</h3>
+		            <p>Vestibulum nec erat eu nulla rhoncus fringilla ut non neque. Vivamus nibh urna, ornare id gravida ut, mollis a magna. Aliquam porttitor condimentum nisi, eu viverra ipsum porta ut. Nam hendrerit bibendum turpis, sed molestie mi fermentum id. Aenean volutpat velit sem. Sed consequat ante in rutrum convallis. Nunc facilisis leo at faucibus adipiscing.</p>
+		        </div>
+		    </div>
+			<br />
+			<br />
+			
+			<h2>Tabs w/ Dropdown</h2>
+			<ul class="nav nav-tabs">
+		        <li class="active"><a data-toggle="tab" href="#sectionD">Section D</a></li>
+		        <li><a data-toggle="tab" href="#sectionE">Section E</a></li>
+		        <li class="dropdown">
+		            <a data-toggle="dropdown" class="dropdown-toggle" href="#">Dropdown <b class="caret"></b></a>
+		            <ul class="dropdown-menu">
+		                <li><a data-toggle="tab" href="#dropdown1">Dropdown1</a></li>
+		                <li><a data-toggle="tab" href="#dropdown2">Dropdown2</a></li>
+		            </ul>
+		        </li>
+		    </ul>
+		    <div class="tab-content">
+		        <div id="sectionD" class="tab-pane fade in active">
+		            <h3>Section D</h3>
+		            <p>Aliquip placeat salvia cillum iphone. Seitan aliquip quis cardigan american apparel, butcher voluptate nisi qui. Raw denim you probably haven't heard of them jean shorts Austin. Nesciunt tofu stumptown aliqua, retro synth master cleanse. Mustache cliche tempor, williamsburg carles vegan helvetica. Reprehenderit butcher retro keffiyeh dreamcatcher synth.</p>
+		        </div>
+		        <div id="sectionE" class="tab-pane fade">
+		            <h3>Section E</h3>
+		            <p>Vestibulum nec erat eu nulla rhoncus fringilla ut non neque. Vivamus nibh urna, ornare id gravida ut, mollis a magna. Aliquam porttitor condimentum nisi, eu viverra ipsum porta ut. Nam hendrerit bibendum turpis, sed molestie mi fermentum id. Aenean volutpat velit sem. Sed consequat ante in rutrum convallis. Nunc facilisis leo at faucibus adipiscing.</p>
+		        </div>
+		        <div id="dropdown1" class="tab-pane fade">
+		            <h3>Dropdown 1</h3>
+		            <p>WInteger convallis, nulla in sollicitudin placerat, ligula enim auctor lectus, in mollis diam dolor at lorem. Sed bibendum nibh sit amet dictum feugiat. Vivamus arcu sem, cursus a feugiat ut, iaculis at erat. Donec vehicula at ligula vitae venenatis. Sed nunc nulla, vehicula non porttitor in, pharetra et dolor. Fusce nec velit velit. Pellentesque consectetur eros.</p>
+		        </div>
+		        <div id="dropdown2" class="tab-pane fade">
+		            <h3>Dropdown 2</h3>
+		            <p>Donec vel placerat quam, ut euismod risus. Sed a mi suscipit, elementum sem a, hendrerit velit. Donec at erat magna. Sed dignissim orci nec eleifend egestas. Donec eget mi consequat massa vestibulum laoreet. Mauris et ultrices nulla, malesuada volutpat ante. Fusce ut orci lorem. Donec molestie libero in tempus imperdiet. Cum sociis natoque penatibus et magnis.</p>
+		        </div>
+		    </div>
+			<br />
+			<br />
+		    
+		    <h2>Tabs on the left</h2>
+		    <div class="tabbable tabs-left">
+		        <ul class="nav nav-tabs">
+		            <li><a data-toggle="tab" href="#lA">Section A</a></li>
+		            <li><a data-toggle="tab" href="#lB">Section B</a></li>
+		            <li class="active"><a data-toggle="tab" href="#lC">Section C</a></li>
+		        </ul>
+		        <div class="tab-content">
+		            <div id="lA" class="tab-pane">
+		                <p>This Section A.</p>
+		            </div>
+		            <div id="lB" class="tab-pane">
+		                <p>This Section B.</p>
+		            </div>
+		            <div id="lC" class="tab-pane active">
+		                <p>This Section C.</p>
+		            </div>
+		        </div>
+		    </div>
+			<br />
+			
+			
+			<h2>Tabs on Right</h2>
+			<div class="tabbable tabs-right">
+		        <ul class="nav nav-tabs">
+		            <li class="active"><a data-toggle="tab" href="#rA">Section A</a></li>
+		            <li><a data-toggle="tab" href="#rB">Section B</a></li>
+		            <li><a data-toggle="tab" href="#rC">Section C</a></li>
+		        </ul>
+		        <div class="tab-content">
+		            <div id="rA" class="tab-pane">
+		                <p>This Section A.</p>
+		            </div>
+		            <div id="rB" class="tab-pane">
+		                <p>This Section B.</p>
+		            </div>
+		            <div id="rC" class="tab-pane active">
+		                <p>This Section C.</p>
+		            </div>
+		        </div>
+		    </div>
+      
+	  <!-  Main component End -->
+    </div> <!-- /container -->
+
+
+    <!-- Modal HTML -->
+    <div id="myModal" class="modal fade">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true"><i class="fa fa-close"></i></button>
+                    <h4 class="modal-title">Settings</h4>
+                </div>
+                <div class="modal-body">
+                    <p>Do you want to save changes you made to document before closing?</p>
+                    <p class="text-warning"><small>If you don't save, your changes will be lost.</small></p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save changes</button>
+                </div>
+            </div>
+        </div>
+    </div>
+  
+
+</body></html>

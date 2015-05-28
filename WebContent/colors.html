@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+	<title>THD Web App - Colors</title>
+	<meta name="description" content="">
+	<meta name="viewport" content="width=device-width" />
+	<link rel="stylesheet" href="css/bootstrap.min.css" />
+	<link rel="stylesheet" href="css/bootstrap-theme.min.css" />
+	<link rel="stylesheet" href="css/jquery-ui.css" />
+	<link rel="stylesheet" href="css/jquery-ui.min.css" />
+	<link rel="stylesheet" href="css/jquery-ui.structure.css" />
+	<link rel="stylesheet" href="css/font-awesome.min.css" />
+	<link rel="stylesheet" href="css/custom.css" />
+	<link rel="stylesheet" href="css/navbar-fixed-top.css" />
+	<script src="js/vendor/jquery-1.10.1.min.js"></script>
+	<script src="js/vendor/jquery-ui.structure.min.js"></script>
+	<script src="js/vendor/jquery-ui.js"></script>
+	<script src="js/vendor/jquery-ui.min.js"></script>
+	<script src="js/vendor/jquery.cookie.js"></script>
+	<script src="js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
+	<script src="js/vendor/bootstrap.min.js"></script>
+	<script src="js/vendor/jquery.validate.min.js"></script>
+	<script src="js/login.js"></script>
+	<script src="js/main.js"></script>
+	
+	<style >
+		
+	</style>
+  </head>
+
+  <body>
+
+    <!-- Fixed navbar -->
+    <nav class="navbar navbar-default navbar-fixed-top navbar-inverse">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <div class="navbar-brand">
+	            <img src="images/com-hd-logo.png" height="50" width="50">
+	            <span class="brand">THD Web App</span>
+	        </div>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+            <li class=""><a href="index.html">Home</a></li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Menu <span class="caret"></span></a>
+              <ul class="dropdown-menu" role="menu">
+                <li><a href="typography.html">Typography</a></li>
+                <li><a href="colors.html">Colors</a></li>
+                <li><a href="grid.html">Grid</a></li>
+                <li><a href="forms.html">Forms</a></li>
+                <li><a href="tables.html">Tables</li>
+                <li><a href="buttons.html">Buttons</a></li>
+                <li><a href="lists.html">Lists</a></li>
+                <li><a href="navigation.html">Navigation</li>
+                <li><a href="widgets.html">Widgets</a></li>
+                <li><a href="tabs.html">Tabs</a></li>
+                <li><a href="labels.html">Labels &amp; Badges</a></li>
+                <li><a href="datepicker.html">Datepicker</a></li>
+              </ul>
+            </li>
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="#myModal" data-toggle="modal"><i class="fa fa-cog fa-2x"></i></a></li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>	      
+	    <section class="container-fluid">
+		    <div class="row text-center">
+		    	<div class="alert alert-info" style="margin:-1px; padding:5px;">				
+				        <a href="#" class="close" data-dismiss="alert">×</a>				
+				         Click a project from the list or Search 				
+				    </div>
+		    </div>
+		</section>
+    </nav>
+	
+    <div class="container">
+
+      <!-- Main component for a primary marketing message or call to action -->
+      <h1>Colors</h1>
+			<hr>
+			<div class="">
+        		<ul>
+        			<li class="colorKey" id="thd">THD Orange <code>color:#F96302</code></li>
+        			<li class="colorKey" id="err">Error Red <code>color:#ED1C24</code></li>
+        			<li class="colorKey" id="zero">#0 &nbsp; <code>color:#000</code></li>
+        			<li class="colorKey" id="three">#3 &nbsp; <code>color:#333</code></li>
+        			<li class="colorKey" id="six">#6 &nbsp; <code>color:#666</code></li>
+        			<li class="colorKey" id="seven">#7 &nbsp; <code>color:#777</code></li>
+        			<li class="colorKey" id="nine">#9 &nbsp; <code>color:#999</code></li>
+        			<li class="colorKey" id="c">#C &nbsp; <code>color:#ccc</code></li>
+        			<li class="colorKey" id="d">#D &nbsp; <code>color:#ddd</code></li>
+        			<li class="colorKey" id="e">#E &nbsp; <code>color:#eee</code></li>
+        		</ul>
+        	</div>
+
+    </div> <!-- /container -->
+
+
+     <!-- Modal HTML -->
+    <div id="myModal" class="modal fade">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true"><i class="fa fa-close"></i></button>
+                    <h4 class="modal-title">Settings</h4>
+                </div>
+                <div class="modal-body">
+                    <p>Do you want to save changes you made to document before closing?</p>
+                    <p class="text-warning"><small>If you don't save, your changes will be lost.</small></p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save changes</button>
+                </div>
+            </div>
+        </div>
+    </div>     
+
+</body></html>

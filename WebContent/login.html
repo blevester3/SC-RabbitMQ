@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+	<title>THD Web App - Login</title>
+	<meta name="description" content="">
+	<meta name="viewport" content="width=device-width" />
+	<link rel="stylesheet" href="css/bootstrap.min.css" />
+	<link rel="stylesheet" href="css/bootstrap-theme.min.css" />
+	<link rel="stylesheet" href="css/jquery-ui.min.css" />
+	<link rel="stylesheet" href="css/jquery-ui.structure.css" />
+	<link rel="stylesheet" href="css/font-awesome.min.css" />
+	<link rel="stylesheet" href="css/custom.css" />
+	<link rel="stylesheet" href="css/navbar-fixed-top.css" />
+	
+	<style >
+		
+	</style>
+  </head>
+
+  <body>
+
+    <!-- Fixed navbar -->
+    <nav class="navbar navbar-default navbar-fixed-top navbar-inverse">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <div class="navbar-brand">
+	            <img src="images/com-hd-logo.png" height="50" width="50">
+	            <span class="brand">THD Web App</span>
+	        </div>
+        </div>
+      </div>
+    </nav>
+	
+    <div class="container">
+
+      <!-- Main component Start  -->
+      
+      	<div class="panel panel-default">
+		  <div class="panel-heading">
+		    <h3 class="panel-title">Login</h3>
+		  </div>
+		  <div class="panel-body" style="border: 1px solid #ddd;">
+		  	<p class="bg-danger">
+		  		You have received this page because the link/application you tried to access is password protected. Please supply a user id and password below. After successful sign-in, you will be directed to the page/link/application you originally requested.
+		  	</p> 
+		  	<div class="col-xs-2"></div>
+		  	<div class="col-xs-8">
+		    <form class="form-horizontal" method="post" action="j_security_check">
+		        <div class="form-group">
+		            <label for="inputUserID" class="control-label col-xs-3">Location</label>
+		            <div class="col-xs-9">
+		                <div class="checkbox">
+		                    <input type="radio" name="j_userbelongsto" id="locSto" value="Store"> <label style="padding-left:0px;" for="locSto">Store</label>&nbsp;
+		                    <input class="text" name="j_storenumber" class="form-control" id="j_storenumber" placeholder="###" style="width:75px;"><br />
+		                    <input type="radio" name="j_userbelongsto" id="locOth" value="Other"> <label style="padding-left:0px;" for="locOth">Other Location</label>
+		                </div>
+		            </div>
+		        </div>
+		        <div class="form-group">
+		            <label for="j_username" class="control-label col-xs-3">User ID</label>
+		            <div class="col-xs-9">
+		                <input type="text" class="form-control" name="j_username" id="j_username" placeholder="User ID">
+		            </div>
+		        </div>
+		        <div class="form-group">
+		            <label for="j_password" class="control-label col-xs-3">Password</label>
+		            <div class="col-xs-9">
+		                <input type="password" class="form-control" name="j_password" id="j_password" placeholder="Password">
+		            </div>
+		        </div>
+		        <div class="form-group">
+		            <div class="col-xs-12 tac">
+		                <button type="submit" class="btn btn-primary">Sign In</button>
+		            </div>
+		        </div>
+		    </form>
+		  	</div>
+		  	<div class="col-xs-2"></div>
+		  </div>
+		</div>
+      
+    </div> <!-- /container -->
+</body></html>
